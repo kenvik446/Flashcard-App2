@@ -1,26 +1,26 @@
-# Web Development Project 2 - _FlashCards_
+# Web Development Project 3 - _Flashcard 3_
 
 Submitted by: **Kehinde Ayeyemi**
 
-This web app: ** A flashcard application that allows users to test their knowledge in various topics by flipping through interactive cards. Users can click on a card to reveal the answer and navigate between cards using the next and previous buttons. **
+This web app: **This web app is an interactive flashcard-based trivia game that allows users to input their guesses before seeing the answer on the flipside of the card. The app provides instant feedback on correctness, enables easy navigation between cards, and enhances the learning experience.**
 
-Time spent: **5.5** hours spent in total
+Time spent: **3.5** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [x] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [x] **A list of card pairs is created**
-- [x] **Clicking on the card shows the corresponding component of the information pair**
-- [x] **Clicking the next button displays a random new card**
+- [x] **The user can enter their guess in a box before seeing the flipside of the card**
+- [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [ ] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-  - [ ] _visual style implemented_
+- [x] A shuffle button is used to randomize the order of the cards
+- [x] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [ ] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
@@ -39,7 +39,7 @@ Here's a walkthrough of implemented required features:
 - **Data Handling:** Props, useState
 - **Styling:** CSS Flexbox & Grid
 
-![Demo GIF](Flashcards.gif)
+![Demo GIF](flashcard 2.gif)
 
 GIF created with GIPHY
 
@@ -47,11 +47,11 @@ GIF created with GIPHY
 
 Some challenges encountered while building the app:
 
-Adjusting the card flipping animation to work smoothly.
+-Ensuring the input field clears when navigating to a new card
 
-Ensuring the background image and text contrast for readability.
+-Providing real-time feedback on correctness without disrupting the user experience
 
-Handling the previous button functionality to loop correctly.
+-Designing an intuitive UI where the input box is placed below the flashcard for better usability
 
 ## License
 
