@@ -39,7 +39,7 @@ Here's a walkthrough of implemented required features:
 - **Data Handling:** Props, useState
 - **Styling:** CSS Flexbox & Grid
 
-![Demo GIF](flashcard 2.gif)
+![Demo GIF](flashcard2.gif)
 
 GIF created with GIPHY
 
