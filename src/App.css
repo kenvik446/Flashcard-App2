@@ -1,0 +1,199 @@
+/* General Styling */
+.container {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px;
+  background-color: aliceblue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Flashcard Section */
+.flashcard-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Flashcard Styling */
+.flashcard-container {
+  perspective: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashcard {
+  width: 360px;
+  height: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipped {
+  transform: rotateY(360deg);
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+.front {
+  background-color: #ffffff;
+  color: #333;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  background-color: #4CAF50;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashcard.flipped .front {
+  display: none;
+}
+
+.flashcard.flipped .back {
+  backface-visibility: visible;
+}
+
+/* Controls Section */
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.controls button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #16283a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #16283a;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.total-cards {
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+/* User Input Section */
+/* Wrapper to ensure input appears below */
+.flashcard-wrapper {
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  align-items: center;     /* Center horizontally */
+}
+
+/* Ensure Flashcard Container is Centered */
+.flashcard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Add spacing between flashcard and input */
+}
+
+/* Answer Input Section */
+.answer-container {
+  display: flex;
+  flex-direction: column; /* Stack input, button, and feedback vertically */
+  align-items: center; /* Center align */
+  margin-top: 15px;
+}
+
+.answer-container input {
+  width: 280px; /* Set a proper width */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Add spacing */
+}
+
+.answer-container button {
+  background-color: #16283a;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-container button:hover {
+  background-color: #0d1b2a;
+}
+
+.feedback {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}

@@ -1,0 +1,14 @@
+# Ignore system & unnecessary files
+.DS_Store
+node_modules/
+.env
+.idea/
+.vscode/
+.anaconda/
+.config/
+.cache/
+.conda/
+.continuum/
+.gem/
+.cups/
+.bundle/
